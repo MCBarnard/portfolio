@@ -1,36 +1,32 @@
 import payfastMarketing from "./../assets/pf-marketing.jpg";
-import payfastBlackFriday from "./../assets/PayFastBFCM.png";
-import portfolioImage3 from "./../assets/portfolio-03.jpg";
-import portfolioImage4 from "./../assets/portfolio-04.jpg";
-import portfolioImage5 from "./../assets/portfolio-05.jpg";
-import portfolioImage6 from "./../assets/portfolio-06.jpg";
-import thinus1 from "../assets/thinus.png";
+import payfastBlackFriday from "./../assets/bfcm.png";
+import totem from "./../assets/totem.png";
+import mediafreaks from "./../assets/mediafreaks-sm.png";
+import netflixSm from "./../assets/netflix-clone.png";
+import skyagencysm from "./../assets/skyagencysm.png";
+import PageDataStore from "../lib/PageDataStore";
 
 import "../css/components/MyWork.css";
 import { useDataLayerValue } from "./DataLayer";
 
 const MyWork = () => {
     const [{}, dispatch] = useDataLayerValue();
-    function filterProjects(project) {
-        switch (project) {
-            case "payfast-marketing":
-                return {
-                    projectTitle: "PayFast",
-                    projectImage: thinus1
-                }
-        }
-    }
+
     function goToItem(project) {
-        const pageObject = filterProjects(project);
+        const pageObject = PageDataStore(project);
         dispatch({
             type: "SET_PROJECT",
             project: project,
-            projectTitle: pageObject.projectTitle,
-            projectImage: pageObject.projectImage
+            intro: pageObject.intro,
+            subText: pageObject.subText,
+            projectImage: pageObject.projectImage,
+            projectBannerImage: pageObject.projectBannerImage,
+            projectIntroParagraph: pageObject.projectIntroParagraph,
+            projectBodyText: pageObject.projectBodyText,
         });
         dispatch({
             type: "SET_PAGE",
-            page: "portfolio-item"
+            page: project
         });
     };
     return (
@@ -47,20 +43,24 @@ const MyWork = () => {
                     <img title={"PayFast Marketing Website"} className={"portfolio__img"} src={payfastMarketing} alt=""/>
                 </a>
                 {/* https://bf.payfast.co.za/ */}
-                <a href="#" className={"portfolio__item"}>
+                <a onClick={() => {goToItem('black-friday-cm')}} href="#" className={"portfolio__item"}>
                     <img title={"PayFast Black Friday Dashboard Tracker"} className={"portfolio__img"} src={payfastBlackFriday} alt=""/>
                 </a>
-                <a href="#" className={"portfolio__item"}>
-                    <img className={"portfolio__img"} src={portfolioImage3} alt=""/>
+                {/* https://thinus-bike-shop.web.app/ */}
+                <a onClick={() => {goToItem('bike-shop')}} href="#" className={"portfolio__item"}>
+                    <img title={"Bike Shop Experiment"} className={"portfolio__img"} src={totem} alt=""/>
                 </a>
-                <a href="#" className={"portfolio__item"}>
-                    <img className={"portfolio__img"} src={portfolioImage4} alt=""/>
+                {/* https://mediaaddicts.herokuapp.com/ */}
+                <a onClick={() => {goToItem('mediafreaks')}} href="#" className={"portfolio__item"}>
+                    <img title={"Media Freaks Marketing"} className={"portfolio__img"} src={mediafreaks} alt=""/>
                 </a>
-                <a href="#" className={"portfolio__item"}>
-                    <img className={"portfolio__img"} src={portfolioImage5} alt=""/>
+                {/* https://thinus-netflix-clone.web.app/ */}
+                <a onClick={() => {goToItem('netflix')}} href="#" className={"portfolio__item"}>
+                    <img title={"Netflix Clone"} className={"portfolio__img"} src={netflixSm} alt=""/>
                 </a>
-                <a href="#" className={"portfolio__item"}>
-                    <img className={"portfolio__img"} src={portfolioImage6} alt=""/>
+                {/* https://skyagency.herokuapp.com/ */}
+                <a onClick={() => {goToItem('skyagency')}} href="#" className={"portfolio__item"}>
+                    <img title={"Sky Agency Polygraphs"} className={"portfolio__img"} src={skyagencysm} alt=""/>
                 </a>
             </div>
         </section>

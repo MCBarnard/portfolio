@@ -1,19 +1,22 @@
 .portfolio-item-individual {
     padding: 0 2em 2em;
-    max-width: 1000px;
+    max-width: 600px;
     margin: 0 auto;
 }
 .portfolio-item-individual p{
     max-width: 600px;
     margin: auto;
-    text-align: center;
 }
 .portfolio-item-individual a{
     color: var(--clr-accent);
     text-decoration: none;
 }
+.portfolio-item-individual .u-rock{
+    color: var(--clr-accent);
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+}
 .portfolio-item-individual a:hover{
     color: var(--clr-accent);
-    font-weight: var(--fw-bold);
     text-decoration: underline;
 }

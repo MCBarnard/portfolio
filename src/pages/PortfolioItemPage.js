@@ -4,18 +4,26 @@ import Footer from "../components/Footer";
 import PortfolioIndividualItem from "../components/PortfolioIndividualItem";
 import {useDataLayerValue} from "../components/DataLayer";
 
+
 const PortfolioItemPage = () => {
-    const [{project, projectTitle, projectImage}, dispatch] = useDataLayerValue();
+    const [{
+        intro,
+        projectImage,
+        subText,
+        projectBannerImage,
+        projectBodyText,
+        projectIntroParagraph
+    }, dispatch] = useDataLayerValue();
 
     return (
         <div>
             <Navbar />
             <IntroComponent
-                intro={<span><small>Marketing Website for</small> <strong>{projectTitle}</strong></span>}
+                intro={intro}
                 projectImage={projectImage}
-                subText={"front-end/fullstack dev"}
+                subText={subText}
             />
-            <PortfolioIndividualItem project={project}/>
+            <PortfolioIndividualItem topParagraph={projectIntroParagraph} portfolioBannerImage={projectBannerImage} bottomBoddy={projectBodyText} />
             <Footer />
         </div>);
 }

@@ -18,7 +18,7 @@ const Services = () => {
                 <div className="service">
                     <h3>Javascript</h3>
                     <p>
-                        Whether it be Vue, React or jQuery, I am experienced in quiet a few JavaScript libraries and frameworks.
+                        Whether it be Vue, React or jQuery, I am experienced in a few JavaScript libraries and frameworks.
                         <br/><br/>I learn new frameworks very easily and it excites me to work with various stacks.
                     </p>
                 </div>

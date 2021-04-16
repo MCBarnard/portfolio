@@ -1,17 +1,20 @@
-import devJane from "../assets/devjane.png";
 import "./../css/components/Navbar.css";
 import {useState} from "react";
 import {useDataLayerValue} from "./DataLayer";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Navbar = () => {
     const [navToggle, setNavToggle] = useState(false);
     const [{page}, dispatch] = useDataLayerValue();
+    function dispatchToHome() {
+        dispatch({
+            type: "SET_PAGE",
+            page: "home"
+        });
+    }
     function setPageHome () {
         if (page !== 'home') {
-            dispatch({
-                type: "SET_PAGE",
-                page: "home"
-            });
+            dispatchToHome();
         }
         toggle();
     }
@@ -20,8 +23,8 @@ const Navbar = () => {
     }
     return (
         <header className={`${navToggle && 'nav-open'}`}>
-            <div className="logo">
-                <img src={ devJane } alt="devThinus"/>
+            <div onClick={dispatchToHome} className="logo">
+                <span className={"devThinus"}><FaAngleLeft />Thinus-Barnard /<FaAngleRight/></span>
             </div>
             <button onClick={toggle} className={'nav-toggle'} aria-label={"toggle navigation"}>
                 <span className={"hamburger"}></span>
@@ -32,7 +35,7 @@ const Navbar = () => {
                         <a onClick={setPageHome} className={"nav__link"} href="#home">Home</a>
                     </li>
                     <li onClick={setPageHome} className={"nav__item"}>
-                        <a className={"nav__link"} href="#services">My Services</a>
+                        <a className={"nav__link"} href="#services">What I Do</a>
                     </li>
                     <li onClick={setPageHome} className={"nav__item"}>
                         <a className={"nav__link"} href="#about">About Me</a>

@@ -2,8 +2,12 @@ export const initialState = {
     user: null,
     page: null,
     project: null,
-    projectTitle: null,
-    projectImage: null
+    intro: null,
+    subText: null,
+    projectImage: null,
+    projectBannerImage: null,
+    projectIntroParagraph: null,
+    projectBodyText: null,
 }
 
 const reducer = (state, action) => {
@@ -22,8 +26,12 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 project: action.project,
-                projectTitle: action.projectTitle,
-                projectImage: action.projectImage
+                intro: action.intro,
+                subText: action.subText,
+                projectImage: action.projectImage,
+                projectBannerImage: action.projectBannerImage,
+                projectIntroParagraph: action.projectIntroParagraph,
+                projectBodyText: action.projectBodyText,
             }
         default: {
             return state;

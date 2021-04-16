@@ -1,10 +1,25 @@
 .logo {
-    max-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    font-weight: bold;
+    color: #7b7b7b;
+    cursor: pointer;
+}
+
+.logo svg {
+    transform: translateY(3px) scale(1.5);
 }
 header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--clr-light);
+    z-index: 10;
 }
 .nav {
     position: fixed;
