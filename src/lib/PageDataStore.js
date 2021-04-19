@@ -17,7 +17,7 @@ function filterProjects(project) {
         case "payfast-marketing":
             return {
                 intro: <span><small>Marketing Website for</small> <strong>PayFast</strong></span>,
-                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za">
                             View the Site <BsArrowRightShort/>
                         </a>,
                 projectImage: payfastMarketing,
@@ -43,7 +43,7 @@ function filterProjects(project) {
         case "black-friday-cm":
             return {
                 intro: <span><small>Black Friday Statistics for</small> <strong>PayFast</strong></span>,
-                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://bf.payfast.co.za/">
                             View the Site <BsArrowRightShort/>
                         </a>,
                 projectImage: payfastBlackFriday,
@@ -72,7 +72,7 @@ function filterProjects(project) {
         case "bike-shop":
             return {
                 intro: <span><small>Personal Animations with </small> <strong>CSS and Three.js</strong></span>,
-                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://thinus-bike-shop.web.app/">
                             View the Site <BsArrowRightShort/>
                         </a>,
                 projectImage: totem,
@@ -92,7 +92,7 @@ function filterProjects(project) {
         case "mediafreaks":
             return {
                 intro: <span><small>Marketing site project built with </small> <strong>Laravel and Vue.js</strong></span>,
-                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://mediaaddicts.herokuapp.com/">
                             View the Site <BsArrowRightShort/>
                         </a>,
                 projectImage: mediafreaks,
@@ -120,7 +120,7 @@ function filterProjects(project) {
         case "netflix":
             return {
                 intro: <span><small>Netflix Clone built with</small> <strong>React.js</strong></span>,
-                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://thinus-netflix-clone.web.app/">
                             View the Site <BsArrowRightShort/>
                         </a>,
                 projectImage: netflixSm,
@@ -149,7 +149,7 @@ function filterProjects(project) {
         case "skyagency":
             return {
                 intro: <span><small>Marketing Website built with</small> <strong>Laravel and Vue.js</strong></span>,
-                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://skyagency.herokuapp.com/">
                             View the Site <BsArrowRightShort/>
                         </a>,
                 projectImage: skyagencysm,
