@@ -1,9 +1,9 @@
 import payfastMarketing from "./../assets/pf-marketing.jpg";
 import payfastBlackFriday from "./../assets/bfcm.png";
-import totem from "./../assets/totem.png";
-import mediafreaks from "./../assets/mediafreaks-sm.png";
+import totem from "./../assets/biking-thumbnail.jpg";
+import mediafreaks from "./../assets/thumbnail-mediaAddicts.jpg";
 import netflixSm from "./../assets/netflix-clone.png";
-import skyagencysm from "./../assets/skyagencysm.png";
+import skyagencysm from "./../assets/sky-thumbnail.jpg";
 import PageDataStore from "../lib/PageDataStore";
 
 import "../css/components/MyWork.css";

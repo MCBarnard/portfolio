@@ -4,19 +4,22 @@ import payfastBlackFriday from "./../assets/bfcm.png";
 import payfastBlackFriday1 from "./../assets/PayFastBFCM.png";
 import totem from "./../assets/totem.png";
 import particles from "./../assets/particlesBanner.png";
-import mediafreaks from "./../assets/mediafreaks-sm.png";
+import mediafreaks from "./../assets/thumbnail-mediaAddicts.jpg";
 import mediafreaksBanner from "./../assets/mediafreaks.png";
 import netflixSm from "./../assets/netflix-clone.png";
 import netflixbanner from "./../assets/netflixbanner.png";
-import skyagencysm from "./../assets/skyagencysm.png";
+import skyagencysm from "./../assets/sky-thumbnail.jpg";
 import skyagency from "./../assets/skyagency.png";
+import { BsArrowRightShort } from "react-icons/bs";
 
 function filterProjects(project) {
     switch (project) {
         case "payfast-marketing":
             return {
                 intro: <span><small>Marketing Website for</small> <strong>PayFast</strong></span>,
-                subText: "front-end/fullstack dev",
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
                 projectImage: payfastMarketing,
                 projectBannerImage: payfastMarketingBanner,
                 projectIntroParagraph: <p>
@@ -40,7 +43,9 @@ function filterProjects(project) {
         case "black-friday-cm":
             return {
                 intro: <span><small>Black Friday Statistics for</small> <strong>PayFast</strong></span>,
-                subText: "front-end/fullstack dev",
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
                 projectImage: payfastBlackFriday,
                 projectBannerImage: payfastBlackFriday1,
                 projectIntroParagraph: <p>
@@ -67,34 +72,29 @@ function filterProjects(project) {
         case "bike-shop":
             return {
                 intro: <span><small>Personal Animations with </small> <strong>CSS and Three.js</strong></span>,
-                subText: "front-end/fullstack dev",
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
                 projectImage: totem,
                 projectBannerImage: particles,
                 projectIntroParagraph: <p>
-                    The <a rel="noreferrer" target={"_blank"} href="https://bf.payfast.co.za/">Black Friday project</a> was
-                    an incredibly fast paced project. We were about 6 developers, 1 designer and a product
-                    manager that tackled this with 2 weeks before the big launch. The project is now in a waiting status until Black Friday comes around again.
+                    This was a very cool project, which I basically used to just test out Three.Js in a normal web project and added some cool animations
+                    to top it off. Three.js is a 3D library that makes it possible to use .obj files that were exported from blender or similar 3D projects
+                    and use them in your websites.
                 </p>,
                 projectBodyText: <>
                     <p>
-                        The project was built with Vue.js and elastic search for our data. We used
-                        the <a rel="noreferrer" target={"_blank"} href="https://lottiefiles.com/">AmCharts</a> library
-                        to build the map. I built the interface, the map, the plotting of the data and it's animations
-                        while the other developers focussed on pulling in the data and making sure we poll the data
-                        source correctly.
-                    </p>
-                    <br/>
-                    <p>
-                        One of the challenges we faced was that the animations for these "blips" would suddenly all show at once and then all fade out.
-                        This was due to the polling rate. So in order to make it look "real-time" I divided the amount of "blips", that we received in
-                        the payload, with the time between polling. This gave us a nice time frame to display all the data on their own.
+                        The intro section uses 2 simple images, one is a drone shot of a mountain range, and the other is a displacement map which dictates the
+                        height in the image. Feed this to Three.js and you can make cool animations and interactions such as the mountain spinning.0
                     </p>
                 </>
             }
         case "mediafreaks":
             return {
                 intro: <span><small>Marketing site project built with </small> <strong>Laravel and Vue.js</strong></span>,
-                subText: "front-end/fullstack dev",
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
                 projectImage: mediafreaks,
                 projectBannerImage: mediafreaksBanner,
                 projectIntroParagraph: <p>
@@ -120,7 +120,9 @@ function filterProjects(project) {
         case "netflix":
             return {
                 intro: <span><small>Netflix Clone built with</small> <strong>React.js</strong></span>,
-                subText: "front-end/fullstack dev",
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
                 projectImage: netflixSm,
                 projectBannerImage: netflixbanner,
                 projectIntroParagraph: <p>
@@ -147,7 +149,9 @@ function filterProjects(project) {
         case "skyagency":
             return {
                 intro: <span><small>Marketing Website built with</small> <strong>Laravel and Vue.js</strong></span>,
-                subText: "front-end/fullstack dev",
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://www.payfast.co.za/integration/shopping-carts">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
                 projectImage: skyagencysm,
                 projectBannerImage: skyagency,
                 projectIntroParagraph: <p>

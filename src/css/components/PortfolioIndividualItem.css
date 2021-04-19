@@ -1,15 +1,27 @@
 .portfolio-item-individual {
     padding: 0 2em 2em;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .portfolio-item-individual p{
-    max-width: 600px;
     margin: auto;
+}
+.portfolio-item-individual img{
+    margin: 1rem auto;
 }
 .portfolio-item-individual a{
     color: var(--clr-accent);
     text-decoration: none;
+}
+.demo-link{
+    color: var(--clr-dark);
+    text-decoration: none;
+}
+.demo-link:hover{
+    text-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+}
+.demo-link svg{
+    transform: translateY(4px);
 }
 .portfolio-item-individual .u-rock{
     color: var(--clr-accent);
