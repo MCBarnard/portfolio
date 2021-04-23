@@ -4,6 +4,7 @@ import totem from "./../assets/biking-thumbnail.jpg";
 import mediafreaks from "./../assets/thumbnail-mediaAddicts.jpg";
 import netflixSm from "./../assets/netflix-clone.png";
 import skyagencysm from "./../assets/sky-thumbnail.jpg";
+import nasaThumb from "../assets/nasa-thumbnail-portfolio.jpg";
 import PageDataStore from "../lib/PageDataStore";
 
 import "../css/components/MyWork.css";
@@ -47,8 +48,12 @@ const MyWork = () => {
                     <img title={"PayFast Black Friday Dashboard Tracker"} className={"portfolio__img"} src={payfastBlackFriday} alt=""/>
                 </a>
                 {/* https://thinus-bike-shop.web.app/ */}
-                <a onClick={() => {goToItem('bike-shop')}} href="#" className={"portfolio__item"}>
-                    <img title={"Bike Shop Experiment"} className={"portfolio__img"} src={totem} alt=""/>
+                {/*<a onClick={() => {goToItem('bike-shop')}} href="#" className={"portfolio__item"}>*/}
+                {/*    <img title={"Bike Shop Experiment"} className={"portfolio__img"} src={totem} alt=""/>*/}
+                {/*</a>*/}
+                {/* https://nasa-mars-rover.web.app/ */}
+                <a onClick={() => {goToItem('nasa-rover-api')}} href="#" className={"portfolio__item"}>
+                    <img title={"Nasa Mars Rover API"} className={"portfolio__img"} src={nasaThumb} alt=""/>
                 </a>
                 {/* https://mediaaddicts.herokuapp.com/ */}
                 <a onClick={() => {goToItem('mediafreaks')}} href="#" className={"portfolio__item"}>

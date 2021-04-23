@@ -11,6 +11,7 @@ function Router() {
         case "mediafreaks":
         case "netflix":
         case "skyagency":
+        case "nasa-rover-api":
         case "black-friday-cm":
             return <PortfolioItemPage />
         case "home":

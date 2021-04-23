@@ -10,6 +10,8 @@ import netflixSm from "./../assets/netflix-clone.png";
 import netflixbanner from "./../assets/netflixbanner.png";
 import skyagencysm from "./../assets/sky-thumbnail.jpg";
 import skyagency from "./../assets/skyagency.png";
+import nasaThumb from "../assets/nasa-thumbnail-portfolio.jpg";
+import nasaBanner from "../assets/nasa-banner-image.png";
 import { BsArrowRightShort } from "react-icons/bs";
 
 function filterProjects(project) {
@@ -163,6 +165,28 @@ function filterProjects(project) {
                 projectBodyText: <>
                     <p>
                         This site was fairly simple, it uses Laravel's Mail class to send emails and right now points to a mailtrap account.
+                    </p>
+                </>
+            }
+        case "nasa-rover-api":
+            return {
+                intro: <span><small>Nasa Mars Rover Client with </small> <strong>Vue.js</strong></span>,
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://nasa-mars-rover.web.app/">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
+                projectImage: nasaThumb,
+                projectBannerImage: nasaBanner,
+                projectIntroParagraph: <p>
+                    This was something I decided to tackle after Nasa's new rover proved flight was capable on mars.
+                    I used the <a rel="noreferrer" target={"_blank"} href="https://api.nasa.gov/">Mars Rover Photos</a> API
+                    and had so much fun. I will definitely be adding new features to this site such as saving pictures you
+                    thought were interesting and conveying to the user that we are still loading or that there aren't pictures in the data set.
+                </p>,
+                projectBodyText: <>
+                    <p>
+                        The hardest part about this site was using the API correctly and implementing an image loading page. There are 2 sets that load, firstly the
+                        network call and then it hands over to the component that will wait for all the images to confirm that they have loaded.
+                        This is not required but was cool to investigate and understand the logic.
                     </p>
                 </>
             }
