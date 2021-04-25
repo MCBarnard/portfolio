@@ -171,7 +171,7 @@ function filterProjects(project) {
         case "nasa-rover-api":
             return {
                 intro: <span><small>Nasa Mars Rover Client with </small> <strong>Vue.js</strong></span>,
-                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://nasa-mars-rover.web.app/">
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://nasa-thinus.web.app/">
                             View the Site <BsArrowRightShort/>
                         </a>,
                 projectImage: nasaThumb,
@@ -184,9 +184,9 @@ function filterProjects(project) {
                 </p>,
                 projectBodyText: <>
                     <p>
-                        The hardest part about this site was using the API correctly and implementing an image loading page. There are 2 sets that load, firstly the
-                        network call and then it hands over to the component that will wait for all the images to confirm that they have loaded.
-                        This is not required but was cool to investigate and understand the logic.
+                        The hardest part about this site was using the API correctly and implementing an image loading page. There is also a slight issue on the home page,
+                        where the hubble api uses http while firebase hosts on https. This causes the api to not communicate with our site and we fallback to a generic
+                        home page.
                     </p>
                 </>
             }
