@@ -1,7 +1,11 @@
 import payfastMarketing from "./../assets/pf-marketing.jpg";
+import payfastMerchantDashboard from "./../assets/projects/Payfast-Merchant-Dashboard.png";
+import payfastSandbox from "./../assets/projects/PayFast-Sandbox.png";
+import payfastSandboxBanner from "./../assets/projects/sandbox-test-payment.png";
 import payfastMarketingBanner from "./../assets/payfastBanner.png";
-import payfastBlackFriday from "./../assets/bfcm.png";
+import payfastBlackFriday from "./../assets/projects/bfcm 2020.jpeg";
 import payfastBlackFriday1 from "./../assets/PayFastBFCM.png";
+import payfastBlackFriday2021 from "./../assets/projects/live-bfcm-2021.png";
 import totem from "./../assets/totem.png";
 import particles from "./../assets/particlesBanner.png";
 import mediafreaks from "./../assets/thumbnail-mediaAddicts.jpg";
@@ -42,9 +46,65 @@ function filterProjects(project) {
                                     </p>
                                 </>
             }
-        case "black-friday-cm":
+        case "payfast-merchant-dashboard":
             return {
-                intro: <span><small>Black Friday Statistics for</small> <strong>PayFast</strong></span>,
+                intro: <span><small>Merchant Dashboard for </small> <strong>PayFast</strong></span>,
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://my.payfast.co.za">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
+                projectImage: payfastMerchantDashboard,
+                projectBannerImage: payfastMerchantDashboard,
+                projectIntroParagraph: <p>
+                    The PayFast Merchant Dashboard is a major milestone for PayFast. It is their biggest
+                    front end project to date. It made use of an internal design system library (built with Vue.js)
+                    and reach across multiple PayFast systems to produce a very user friendly admin dashboard for merchants.
+                </p>,
+                projectBodyText: <>
+                                    <p>
+                                        We used Laravel and Vue throughout the project with an internal design system package
+                                        that our team also built. It had a lengthy development timeline passing over a year
+                                        before anything was ready for release. Since then, the project has been releasing
+                                        incremental bits and features with great feedback from merchants.
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        This project had a large amount of complexity, ranging from architectural decisions
+                                        to design decisions and user interaction. We had 10 developers on the project to
+                                        push it over the line. my favorite section personally is
+                                        the <a rel="noreferrer" target={"_blank"} href="https://www.payfast.co.za/contact">PayNow button page</a>.
+                                        Which will build you pieces of code that you can use to implement the most basic PayFast integration onto your site.
+                                        This is all done in JavaScript and will give you pure HTML wherever possible.
+                                    </p>
+                                </>
+            }
+        case "payfast-sandbox":
+            return {
+                intro: <span><small>Testing platform for </small> <strong>PayFast</strong></span>,
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://sandbox.payfast.co.za">
+                    View the Site <BsArrowRightShort/>
+                </a>,
+                projectImage: payfastSandbox,
+                projectBannerImage: payfastSandboxBanner,
+                projectIntroParagraph: <p>
+                    The PayFast Sandbox project is a complex system that allows users to complete payments and test their integration.
+                    This is the tool that developers spend the most time with while integrating with PayFast and we added a few cool tools for them
+                    inside this project.
+                </p>,
+                projectBodyText: <>
+                    <p>
+                        We used Laravel with a Vue Front End and Lumen for the engine. Our team was excited to remodel from the old sandbox.
+                    </p>
+                    <br/>
+                    <p>
+                        My favorite part of the project was building the <a rel="noreferrer" target={"_blank"} href="https://sandbox.payfast.co.za/integration-test">
+                            test your integration</a> page which works by accepting user data and building a checkout
+                        from the data provided.
+                    </p>
+                </>
+            }
+        case "2020-black-friday-cm":
+            return {
+                intro: <span><small>Black Friday Statistics for</small> <strong>PayFast</strong> 2020</span>,
                 subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://bf.payfast.co.za/">
                             View the Site <BsArrowRightShort/>
                         </a>,
@@ -70,6 +130,35 @@ function filterProjects(project) {
                         the payload, with the time between polling. This gave us a nice time frame to display all the data on their own.
                     </p>
                 </>
+            }
+        case "2021-black-friday-cm":
+            return {
+                intro: <span><small>Black Friday Statistics for</small> <strong>PayFast</strong> 2021</span>,
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="https://bf.payfast.co.za/">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
+                projectImage: payfastBlackFriday,
+                projectBannerImage: payfastBlackFriday2021,
+                projectIntroParagraph: <p>
+                    This years <a rel="noreferrer" target={"_blank"} href="https://bf.payfast.co.za/">Black Friday project</a> was
+                    a mix between interactive animations and data presentation. We were about 6 developers, 1 designer and a product
+                    manager and we had a bit more time to think it through.
+                </p>,
+                projectBodyText: <>
+                    <p>
+                        We kept the original infrastructure and used the same <a rel="noreferrer" target={"_blank"} href="https://www.amcharts.com/">AmCharts</a> library for
+                        the pie chart and the map.
+                        I built the live timeline, pie chart, map component and flip animation, however we all touched
+                        most parts of the project and was responsible for bits and pieces across the site.
+                    </p>
+                    <br/>
+                    <p>
+                        The main focus of this year was to have one server send out notifications in the socket room
+                        instead of each client making requests for data. Last year, the servers were really perspiring
+                        to make it through the weekend. This year, we anticipate a lot less load on the servers since
+                        queries will only occur once and be cached for everyone else.
+                    </p>
+                    </>
             }
         case "bike-shop":
             return {

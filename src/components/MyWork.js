@@ -1,10 +1,13 @@
 import payfastMarketing from "./../assets/pf-marketing.jpg";
-import payfastBlackFriday from "./../assets/bfcm.png";
+import payfastBlackFriday from "./../assets/projects/bfcm 2020.jpeg";
+import payfastBlackFriday2021 from "./../assets/projects/live-bfcm-2021.png";
+import payfastMerchantDashboard from "./../assets/projects/Payfast-Merchant-Dashboard.png";
 import totem from "./../assets/biking-thumbnail.jpg";
 import mediafreaks from "./../assets/thumbnail-mediaAddicts.jpg";
 import netflixSm from "./../assets/netflix-clone.png";
 import skyagencysm from "./../assets/sky-thumbnail.jpg";
 import nasaThumb from "../assets/nasa-thumbnail-portfolio.jpg";
+import payfastSandbox from "./../assets/projects/PayFast-Sandbox.png";
 import PageDataStore from "../lib/PageDataStore";
 
 import "../css/components/MyWork.css";
@@ -44,8 +47,12 @@ const MyWork = () => {
                     <img title={"PayFast Marketing Website"} className={"portfolio__img"} src={payfastMarketing} alt=""/>
                 </a>
                 {/* https://bf.payfast.co.za/ */}
-                <a onClick={() => {goToItem('black-friday-cm')}} href="#" className={"portfolio__item"}>
+                <a onClick={() => {goToItem('2020-black-friday-cm')}} href="#" className={"portfolio__item"}>
                     <img title={"PayFast Black Friday Dashboard Tracker"} className={"portfolio__img"} src={payfastBlackFriday} alt=""/>
+                </a>
+                {/* https://bf.payfast.co.za/ */}
+                <a onClick={() => {goToItem('2021-black-friday-cm')}} href="#" className={"portfolio__item"}>
+                    <img title={"PayFast Black Friday Dashboard Tracker"} className={"portfolio__img"} src={payfastBlackFriday2021} alt=""/>
                 </a>
                 {/* https://thinus-bike-shop.web.app/ */}
                 {/*<a onClick={() => {goToItem('bike-shop')}} href="#" className={"portfolio__item"}>*/}
@@ -66,6 +73,14 @@ const MyWork = () => {
                 {/* https://skyagency.herokuapp.com/ */}
                 <a onClick={() => {goToItem('skyagency')}} href="#" className={"portfolio__item"}>
                     <img title={"Sky Agency Polygraphs"} className={"portfolio__img"} src={skyagencysm} alt=""/>
+                </a>
+                {/* https://sandbox.payfast.co.za/ */}
+                <a onClick={() => {goToItem('payfast-sandbox')}} href="#" className={"portfolio__item"}>
+                    <img title={"PayFast Sandbox"} className={"portfolio__img"} src={payfastSandbox} alt=""/>
+                </a>
+                {/* https://www.payfast.co.za */}
+                <a onClick={() => {goToItem('payfast-merchant-dashboard')}} href="#" className={"portfolio__item"}>
+                    <img title={"PayFast Merchant Dashboard"} className={"portfolio__img"} src={payfastMerchantDashboard} alt=""/>
                 </a>
             </div>
         </section>
