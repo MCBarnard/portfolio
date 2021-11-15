@@ -1,4 +1,5 @@
 import payfastMarketing from "./../assets/pf-marketing.jpg";
+import chatAppInterface from "./../assets/projects/chat-app-profile-page.png";
 import payfastBlackFriday from "./../assets/projects/bfcm 2020.jpeg";
 import payfastBlackFriday2021 from "./../assets/projects/live-bfcm-2021.png";
 import payfastMerchantDashboard from "./../assets/projects/Payfast-Merchant-Dashboard.png";
@@ -42,6 +43,10 @@ const MyWork = () => {
                 A Selection of my range of work
             </p>
             <div className="portfolio">
+                {/* http://thinus-chat-app.herokuapp.com/ */}
+                <a onClick={() => {goToItem('chat-app')}} href="#" className={"portfolio__item"}>
+                    <img title={"Chat Application"} className={"portfolio__img"} src={chatAppInterface} alt=""/>
+                </a>
                 {/* https://www.payfast.co.za */}
                 <a onClick={() => {goToItem('payfast-marketing')}} href="#" className={"portfolio__item"}>
                     <img title={"PayFast Marketing Website"} className={"portfolio__img"} src={payfastMarketing} alt=""/>
@@ -71,9 +76,9 @@ const MyWork = () => {
                     <img title={"Netflix Clone"} className={"portfolio__img"} src={netflixSm} alt=""/>
                 </a>
                 {/* https://skyagency.herokuapp.com/ */}
-                <a onClick={() => {goToItem('skyagency')}} href="#" className={"portfolio__item"}>
-                    <img title={"Sky Agency Polygraphs"} className={"portfolio__img"} src={skyagencysm} alt=""/>
-                </a>
+                {/*<a onClick={() => {goToItem('skyagency')}} href="#" className={"portfolio__item"}>*/}
+                {/*    <img title={"Sky Agency Polygraphs"} className={"portfolio__img"} src={skyagencysm} alt=""/>*/}
+                {/*</a>*/}
                 {/* https://sandbox.payfast.co.za/ */}
                 <a onClick={() => {goToItem('payfast-sandbox')}} href="#" className={"portfolio__item"}>
                     <img title={"PayFast Sandbox"} className={"portfolio__img"} src={payfastSandbox} alt=""/>

@@ -16,6 +16,7 @@ function Router() {
         case "2020-black-friday-cm":
         case "2021-black-friday-cm":
         case "payfast-merchant-dashboard":
+        case "chat-app":
             return <PortfolioItemPage />
         case "home":
         default:

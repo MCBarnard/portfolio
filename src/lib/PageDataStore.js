@@ -16,10 +16,56 @@ import skyagencysm from "./../assets/sky-thumbnail.jpg";
 import skyagency from "./../assets/skyagency.png";
 import nasaThumb from "../assets/nasa-thumbnail-portfolio.jpg";
 import nasaBanner from "../assets/nasa-banner-image.png";
+import chatAppInterface from "./../assets/projects/chat-app-interface.png";
+import chatAppProfilePage from "./../assets/projects/chat-app-profile-page.png";
 import { BsArrowRightShort } from "react-icons/bs";
 
 function filterProjects(project) {
     switch (project) {
+        case "chat-app":
+            return {
+                intro: <span><small>Encrypted </small> <strong>Live Chat Application</strong></span>,
+                subText: <a rel="noreferrer" className={"demo-link"} target={"_blank"} href="http://thinus-chat-app.herokuapp.com/">
+                            View the Site <BsArrowRightShort/>
+                        </a>,
+                projectImage: chatAppInterface,
+                projectBannerImage: chatAppProfilePage,
+                projectIntroParagraph: <p>
+                                            This application was built to experiment with a few of Laravel's built in tools
+                                            and also to test my own abilities. While the project is not 100% polished,
+                                            it does look promising and can easily look very modern and slick. The main functionality
+                                            is ready, such as making a friend request, communicating, updating a profile picture
+                                            and having your chats be stored encrypted.
+                                        </p>,
+                projectBodyText: <>
+                                    <p>
+                                        I used Laravel and Vue.js to build the project, no bootstrap was used, this was a project where I wanted to show case
+                                        my front end skills and work on some animations I have been wanting to try. I also encrypted the messages
+                                        with <a rel="noreferrer" target={"_blank"} href="https://laravel.com/docs/8.x/encryption">Laravel's Encryption</a>&nbsp;
+                                        library.
+                                    </p>
+                                    <br/>
+                                    <p>
+                                        The coolest part of the project is that everything is live and instant. I used <a rel="noreferrer" target={"_blank"} href="https://pusher.com/">Pusher
+                                        </a> and <a rel="noreferrer" target={"_blank"} href="https://laravel-livewire.com/docs/2.x/laravel-echo">Laravel Echo</a> for
+                                        the instant notifications and I also implemented fully encrypted message storage. There is currently an issue where postgres does not like
+                                        the way Laravel handles some queries with JSON which I need to address and heroku only offers postgres. When it is fixed, I will share the
+                                        usernames, passwords and connection id's
+                                    </p>
+                                    {/*<br/>*/}
+                                    {/*<p>*/}
+                                    {/*    The next steps will be sending an email to the recipient wen they receive a message. Feel free to send me a connection request and*/}
+                                    {/*    let's talk code! My connection id is 602436794. <a rel="noreferrer" target={"_blank"} href="http://thinus-chat-app.herokuapp.com/register">Sign up</a>&nbsp;*/}
+                                    {/*    or <a rel="noreferrer" target={"_blank"} href="http://thinus-chat-app.herokuapp.com/login">log in</a> to any of the open accounts you can see in the seeder...*/}
+                                    {/*</p>*/}
+                                    {/*<br/>*/}
+                                    {/*<p>*/}
+                                    {/*    <u><b>Or just use these credentials:</b></u><br/>*/}
+                                    {/*        <b>Username:</b> test@test.com<br/>*/}
+                                    {/*        <b>password:</b> 1qazxsw2<br/>*/}
+                                    {/*</p>*/}
+                                </>
+            }
         case "payfast-marketing":
             return {
                 intro: <span><small>Marketing Website for</small> <strong>PayFast</strong></span>,
