@@ -33,7 +33,7 @@ const MyWork = () => {
             type: "SET_PAGE",
             page: project
         });
-    };
+    }
     return (
         <section className={"my-work"} id={"work"}>
             <h2 className="section__title section__title--work">
@@ -88,6 +88,9 @@ const MyWork = () => {
                     <img title={"PayFast Merchant Dashboard"} className={"portfolio__img"} src={payfastMerchantDashboard} alt=""/>
                 </a>
             </div>
+            <p className={"section__subtitle section__subtitle--work bottom"}>
+                Checkout my GitHub for more of my project that aren't hosted at the moment!
+            </p>
         </section>
     );
 }

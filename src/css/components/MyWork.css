@@ -6,7 +6,13 @@
 .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
-    margin-bottom: 2em;
+    margin-bottom: 16px!important;
+}
+.section__subtitle--work.bottom {
+    font-weight: var(--fw-reg);
+    margin-top: 16px;
+    font-size: 14px;
+    color: #fff;
 }
 
 .portfolio {
